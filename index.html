@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Charlotte Verde</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="icon" href="images/favicon.ico">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-green w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Fechar o Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Charlotte<br>Verde</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Pagina Principal</a> 
+    <a href="#cen" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Centros de reciclagem</a> 
+    <a href="#guia" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Guia de reciclagem</a> 
+    <a href="#doacao" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Sobre doações</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contato</a>
+  </div>
+</nav>
+
+<!-- menu -->
+<header class="w3-container w3-top w3-hide-large w3-green w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-green w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Charlotte Verde</span>
+</header>
+
+
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <img src="images/City-Crown-1000.jpg" style="width:100%" onclick="onClick(this)" alt="charlotte logo">
+    <h1 class="w3-jumbo"><b>Charlotte</b></h1>
+    <h1 class="w3-xxxlarge w3-text-green"><b>Verde!</b></h1>
+    <h5>Faça a sua parte para reduzir a quantidade de lixo e realize a coleta celetiva de forma eficaz!</h5>
+    <h5>Nossa missão é proporcionar ferramentas como mapa dos centros de reciclagem disponiveis no condado de Mecklenburg. Acompanhe um guia de práticas de reciclagem. Faça doações a ONGs da região. Save o planeta!</h5>
+    <hr style="width:50px;border:5px solid green" class="w3-round">
+  </div>
+  
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="images/637484690169470000.png" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
+    </div>
+
+    <div class="w3-half">
+      <img src="images/trash.jpg" style="width:100%" onclick="onClick(this)" alt="reciclagem">
+    </div>
+  </div>
+
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+  <br><br><br>
+  <br><br><br>
+  <hr style="width: 100%;border:5px solid green" class="w3-round">
+
+  <!-- Centros -->
+  <p id="cen" style="color: aliceblue;">.</p>
+  <div class="w3-container" id="centros" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-green"><b>Centros de reciclagem</b></h1>
+    <h5>Nave o mapa para encontrar um centro de reciclagem perto de você!</h5>
+    <hr style="width:50px;border:5px solid green" class="w3-round">
+    <p><iframe src="https://www.google.com/maps/d/embed?mid=1xTQzY9AZZrgZJTef5L4PMlyBFJk&hl=en&ehbc=2E312F" width="100%" height="500"></iframe>
+    </p>
+    <h5>A cidade de Charlotte não coleta material de obra, ou moveis velhos, para descartar de forma sustentavel é necessário levar o lixo a um  centro de reciclagem mais proximo.</h5>
+    <h5>Os residentes podem levar seus materiais recicláveis, lixo de obra, jardinagem, eletronicos, óleo lubrificante entre 7 a.m. - 4 p.m. de segunda a sexta.</h5>
+  </div>
+  <br><br><br>
+  <hr style="width: 100%;border:5px solid green" class="w3-round">
+  <br><br><br>
+  
+  <!-- Guia -->
+  <p id="guia" style="color: aliceblue;">.</p>
+  <div class="w3-container" id="g" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-green"><b>Guia de reciclagem</b></h1>
+    <hr style="width:50px;border:5px solid green" class="w3-round">
+    <p>Tudo que está à nossa volta foi feito de natureza.</p>
+    <p>Todas as matérias-primas vem de recursos naturais, como minerais, solo, água, florestas ou até mesmo do sol. Assim, garantir a reciclagem do nosso lixo, é honrar as matérias-primas providas pela natureza.</p><br>
+    <h2><b>Mas o que é reciclagem?</b></h2>
+  </div>
+
+  <!-- guia2 -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/grafico.png" alt="John" style="width:100%">
+        <div class="w3-container">
+          <p>Nada mais é do que o processo em que há a transformação do resíduo sólido, que não seria aproveitado, atribuindo características para que ele se torne novamente matéria-prima ou produto. Isso é feito por meio de mudanças em seus estados físico, físico-químico ou biológico.
+
+            A reciclagem faz parte dos três ‘R’s da sustentabilidade, que consistem em: reduzir, reutilizar e reciclar.
+            O que pode ser reciclado?
+            A reciclagem depende de uma cadeia valorizada e desenvolvida.
+            </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/Both Recycling Icons_0.png" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Como fazer coleta seletiva em casa?</h3>
+          <p>A separação é parte essencial para fazer coleta seletiva em casa! Quanto mais separado por tipos (alumínio, papelão, plásticos, vidro, etc), melhor! O material que você utiliza para embalar o descarte também conta para uma destinação adequada. Embrulhar pilhas em sacos biodegradáveis, por exemplo, é inadequado. Isso porque eles podem se biodegradar antes das pilhas serem recolhidas, o que pode fazer com que elas vazem. Entenda quais são os sacos de lixo para coleta seletiva adequados.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/recycle-WM.jpg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>O que a cidade de Charlotte aceita como recicláveis?</h3>
+          <p class="w3-opacity">Use o lixo verde fornecido pela cidade.</p>
+            <b>VIDRO</b> - Garrafas de bebidas de vidro, jarros de picles de vidro, potes de conservas de vidro<br>
+            <b>METAIS</b> -  Latas de bebidas, latas de sopa e legumes, papel alumínio<br>
+            <b>PAPELAO</b> - Caixas de entregas, caixas de cereais, cartelas de ovos, tubos de papelão<br>
+            <B>GARRAFAS, JARROS, BACIAS E TAMPAS DE PLÁSTICO</B> -  Garrafas de bebidas de plástico, recipientes de leite, potes de iogurte, bacias e tampas, embalagens de xampus, garrafas de detergentes Sacos de plástico Materiais recicláveis ensacados Roupas Mangueiras e cordas Sucata de metal<br>
+            <B>NÃO ACEITAMOS!</B> -  Pilhas Talheres e canudinhos de plástico Restos de comida e líquidos Aparelhos eletrônicos Isopor Recipientes de plástico preto de entrega de refeições</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br><br>
+  <br><br><br>
+  <hr style="width: 100%;border:5px solid green" class="w3-round">
+
+  <!-- Doacoes -->
+  <br><br><br>
+  <p id="doacao" style="color: aliceblue;">.</p>
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-green"><b>Centros de Doação</b></h1>
+    <hr style="width:50px;border:5px solid green" class="w3-round">
+    <h4>As doações também constroem casas!</h4>
+    <p>
+      Quando você doa seus itens usados com cuidado para algum centro de doação, você está mudando vidas ao tornar a aquisição de uma casa própria acessível uma realidade para uma família em sua própria comunidade! Através da revenda das suas generosas doações, podemos ajudar a financiar a construção e reparação de casas região de Charlotte.
+      Muitos empregos são gerados para separar e vender as doações.
+      Você não está apenas fazendo a diferença localmente, mas também globalmente, evitando que utensílios domésticos com bastante vida sejam desperdiçados desnecessariamente em aterros sanitários!
+      </p>
+      <p>Navegue o mapa para encontrar o mais proximo de sua residência.</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d208705.96364802544!2d-80.8322647977203!3d35.180787817842976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sdonations%20center!5e0!3m2!1sen!2sus!4v1705094741249!5m2!1sen!2sus" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <div class="w3-row-padding">
+    <br><h4><b>Principais centros de doação:</b></h4>
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-blue w3-xlarge w3-padding-32">Goodwill</li>
+        <li class="w3-padding-16">NOSSA MISSÃO E VISÃO
+          A Goodwill é conhecida por ajudar as pessoas a encontrar trabalho. Esse foi o foco da declaração de missão que escrevemos há 50 anos. Mas muita coisa mudou desde então e o que fazemos vai muito além do emprego. Ao longo dos anos, adaptamos nossos serviços para atender às necessidades crescentes de nossa comunidade. Nosso propósito mudou para ajudar as pessoas a ver possibilidades, aproveitar oportunidades e prosperar. E à medida que as nossas aspirações cresceram, acreditamos que a nossa missão, visão e valores devem crescer connosco. Para apoiar o nosso propósito comum, atualizámos recentemente a nossa missão, visão e valores para refletir a posição e o papel da Goodwill na comunidade: criar acesso equitativo a oportunidades de carreira e de desenvolvimento pessoal para todos.</li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-white w3-padding-large w3-hover-black">Entre no site!</button>
+        </li>
+      </ul>
+    </div>
+        
+    <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-red w3-xlarge w3-padding-32">The Salvation Army</li>
+        <li class="w3-padding-16">O Exército de Salvação, um movimento internacional, é uma parte evangélica da Igreja Cristã universal. Sua mensagem é baseada na Bíblia. Seu ministério é motivado pelo amor de Deus. Sua missão é pregar o evangelho de Jesus Cristo e atender às necessidades humanas em Seu nome, sem discriminação.</li>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-white w3-padding-large w3-hover-black">Site!</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <br><br><br>
+  <br><br><br>
+  <hr style="width: 100%;border:5px solid green" class="w3-round">
+  
+  <!-- Contact -->
+  <p id="contact" style="color: aliceblue;">.</p>
+  <br><br><br>
+  <img src="images/IMG_7421.HEIC-by-Karie.webp" alt="trash" style="width:100%">
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-green"><b>Contato</b></h1>
+    <hr style="width:50px;border:5px solid green" class="w3-round">
+    <p>Você precisa de ajuda? Entre em contato.</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Nome</label>
+        <input class="w3-input w3-border" type="text" name="Name" requigreen>
+      </div>
+      <div class="w3-section">
+        <label>E-mail</label>
+        <input class="w3-input w3-border" type="text" name="Email" requigreen>
+      </div>
+      <div class="w3-section">
+        <label>Mensagem</label>
+        <input class="w3-input w3-border" type="text" name="Message" requigreen>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-green w3-margin-bottom">Enviar Mensagem</button>
+    </form>  
+  </div>
+  <br><br><br>
+</div>
+
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Projeto Sustentável<br>Matheus Chaves Mota Ribeiro<br>Utilizando <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
