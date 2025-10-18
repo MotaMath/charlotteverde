@@ -147,7 +147,7 @@ body {font-size:16px;}
   <br><br><br>
   <p id="doacao" style="color: aliceblue;">.</p>
   <div class="w3-container" id="packages" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-green"><b>Centros de Doação</b></h1>
+    <h1 class="w3-xxxlarge w3-text-green"><b>Centros de Doações</b></h1>
     <hr style="width:50px;border:5px solid green" class="w3-round">
     <h4>As doações também constroem casas!</h4>
     <p>
@@ -160,7 +160,7 @@ body {font-size:16px;}
   </div>
 
   <div class="w3-row-padding">
-    <br><h4><b>Principais centros de doação:</b></h4>
+    <br><h4><b>Principais centros de doações:</b></h4>
     <div class="w3-half w3-margin-bottom">
       <ul class="w3-ul w3-light-grey w3-center">
         <li class="w3-blue w3-xlarge w3-padding-32">Goodwill</li>
@@ -187,54 +187,26 @@ body {font-size:16px;}
   <br><br><br>
   <hr style="width: 100%;border:5px solid green" class="w3-round">
   
-  <!-- Contact -->
-  <p id="contact" style="color: aliceblue;">.</p>
-  <br><br><br>
-  <img src="images/IMG_7421.HEIC-by-Karie.webp" alt="trash" style="width:100%">
-  <div class="w3-container" id="contact" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-green"><b>Contato</b></h1>
-    <hr style="width:50px;border:5px solid green" class="w3-round">
-    <p>Você precisa de ajuda? Entre em contato.</p>
-    <form action="/action_page.php" target="_blank">
-      <div class="w3-section">
-        <label>Nome</label>
-        <input class="w3-input w3-border" type="text" name="Name" requigreen>
-      </div>
-      <div class="w3-section">
-        <label>E-mail</label>
-        <input class="w3-input w3-border" type="text" name="Email" requigreen>
-      </div>
-      <div class="w3-section">
-        <label>Mensagem</label>
-        <input class="w3-input w3-border" type="text" name="Message" requigreen>
-      </div>
-      <button type="submit" class="w3-button w3-block w3-padding-large w3-green w3-margin-bottom">Enviar Mensagem</button>
-    </form>  
+
+<form id="contact">
+  <div class="w3-section">
+    <label>Nome</label>
+    <input class="w3-input w3-border" type="text" name="Name" id="name" required>
   </div>
-  <br><br><br>
-</div>
+  <div class="w3-section">
+    <label>E-mail</label>
+    <input class="w3-input w3-border" type="email" name="Email" id="email" required>
+  </div>
+  <div class="w3-section">
+    <label>Mensagem</label>
+    <input class="w3-input w3-border" type="text" name="Message" id="message" required>
+  </div>
+  <button  id="submit1" type="submit" class="w3-button w3-block w3-padding-large w3-green w3-margin-bottom">Enviar Mensagem</button>
+</form>
 
 <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Projeto Sustentável<br>Matheus Chaves Mota Ribeiro<br>Utilizando <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
 
-<script>
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
-
-
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-</script>
+<script src="/script.js"></script>
 
 </body>
 </html>
