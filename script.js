@@ -8,7 +8,7 @@ function w3_close() {
   document.getElementById("myOverlay").style.display = "none";
 }
 
-// Modal Image Gallery
+// Imagem Modal
 function onClick(element) {
   document.getElementById("img01").src = element.src;
   document.getElementById("modal01").style.display = "block";
@@ -37,8 +37,4 @@ document.getElementById("contact").addEventListener("submit", function (event) {
     .then(data => console.log("Success:", data))
     .catch(error => console.error("Error:", error));
 
-});
-
-document.getElementById("submit1").onclick(function () {
-  console.log("Mensagem enviada com sucesso!");
 });
